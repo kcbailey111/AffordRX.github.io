@@ -1,0 +1,360 @@
+source,name,pharmacy,scraped_price,median_scraped_price,pct_from_median,nadac_description,nadac_ndc,nadac_per_unit,baseline_quantity,nadac_wholesale_total,retail_markup_vs_nadac,median_retail_markup,pct_markup_drift,nadac_lookup_status,flagged,flag_reasons
+national,Acetaminophen,Walgreens,2.55,5.66,,ACETAMINOPHEN 500 MG TABLET,70000041002,0.03024,30.0,0.9072,2.81,6.24,0.5495,ok_exact,yes,markup_drift>30%
+national,Acetaminophen,Walmart Neighborhood Market,3.57,5.66,,ACETAMINOPHEN 500 MG TABLET,70000041002,0.03024,30.0,0.9072,3.94,6.24,0.3693,ok_exact,yes,markup_drift>30%
+national,Acetaminophen,Harris Teeter,18.78,5.66,,ACETAMINOPHEN 500 MG TABLET,70000041002,0.03024,30.0,0.9072,20.7,6.24,2.318,ok_exact,yes,markup_drift>30%
+national,Acetaminophen,Food Lion Pharmacy,14.32,5.66,,ACETAMINOPHEN 500 MG TABLET,70000041002,0.03024,30.0,0.9072,15.78,6.24,1.53,ok_exact,yes,markup_drift>30%
+national,Acetaminophen,"Community, a Walgreens Pharmacy",2.0,5.66,,ACETAMINOPHEN 500 MG TABLET,70000041002,0.03024,30.0,0.9072,2.2,6.24,0.6466,ok_exact,yes,markup_drift>30%
+national,Acetaminophen,Kroger Pharmacy,18.78,5.66,,ACETAMINOPHEN 500 MG TABLET,70000041002,0.03024,30.0,0.9072,20.7,6.24,2.318,ok_exact,yes,markup_drift>30%
+national,Aluminum,Walmart,13.43,15.52,,ALUMINUM HYDROXIDE GEL,00536009185,0.01052,1.0,0.0105,1279.05,1477.62,0.1344,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Aluminum,CVS Pharmacy,23.97,15.52,,ALUMINUM HYDROXIDE GEL,00536009185,0.01052,1.0,0.0105,2282.86,1477.62,0.545,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Aluminum,Walgreens,4.87,15.52,,ALUMINUM HYDROXIDE GEL,00536009185,0.01052,1.0,0.0105,463.81,1477.62,0.6861,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Aluminum,Walmart Neighborhood Market,13.43,15.52,,ALUMINUM HYDROXIDE GEL,00536009185,0.01052,1.0,0.0105,1279.05,1477.62,0.1344,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Aluminum,Costco,7.43,15.52,,ALUMINUM HYDROXIDE GEL,00536009185,0.01052,1.0,0.0105,707.62,1477.62,0.5211,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Aluminum,Target (CVS),23.97,15.52,,ALUMINUM HYDROXIDE GEL,00536009185,0.01052,1.0,0.0105,2282.86,1477.62,0.545,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Aluminum,Harris Teeter,21.74,15.52,,ALUMINUM HYDROXIDE GEL,00536009185,0.01052,1.0,0.0105,2070.48,1477.62,0.4012,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Aluminum,Food Lion Pharmacy,17.6,15.52,,ALUMINUM HYDROXIDE GEL,00536009185,0.01052,1.0,0.0105,1676.19,1477.62,0.1344,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Aluminum,Publix,12.74,15.52,,ALUMINUM HYDROXIDE GEL,00536009185,0.01052,1.0,0.0105,1213.33,1477.62,0.1789,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Aluminum,Kroger Pharmacy,21.74,15.52,,ALUMINUM HYDROXIDE GEL,00536009185,0.01052,1.0,0.0105,2070.48,1477.62,0.4012,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Amlodipine,CVS Pharmacy,15.42,7.99,,AMLODIPINE BESYLATE 5 MG TAB,60687048801,0.01105,30.0,0.3315,46.52,24.1,0.9299,ok_exact,yes,markup_drift>30%; above_retail_ceiling
+national,Amlodipine,Walmart,9.0,7.99,,AMLODIPINE BESYLATE 5 MG TAB,60687048801,0.01105,30.0,0.3315,27.15,24.1,0.1264,ok_exact,yes,above_retail_ceiling
+national,Amlodipine,Target (CVS),15.42,7.99,,AMLODIPINE BESYLATE 5 MG TAB,60687048801,0.01105,30.0,0.3315,46.52,24.1,0.9299,ok_exact,yes,markup_drift>30%; above_retail_ceiling
+national,Amlodipine,Walmart Neighborhood Market,9.0,7.99,,AMLODIPINE BESYLATE 5 MG TAB,60687048801,0.01105,30.0,0.3315,27.15,24.1,0.1264,ok_exact,yes,above_retail_ceiling
+national,Amlodipine,Publix,2.0,7.99,,AMLODIPINE BESYLATE 5 MG TAB,60687048801,0.01105,30.0,0.3315,6.03,24.1,0.7497,ok_exact,yes,markup_drift>30%
+national,Aspirin,Walmart,10.45,9.44,,ASPIRIN 325 MG TABLET,00536105405,0.01053,30.0,0.3159,33.08,29.88,0.107,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Aspirin,Walgreens,2.0,9.44,,ASPIRIN 325 MG TABLET,00536105405,0.01053,30.0,0.3159,6.33,29.88,0.7881,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Aspirin,Walmart Neighborhood Market,10.42,9.44,,ASPIRIN 325 MG TABLET,00536105405,0.01053,30.0,0.3159,32.99,29.88,0.1038,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Aspirin,Costco,4.48,9.44,,ASPIRIN 325 MG TABLET,00536105405,0.01053,30.0,0.3159,14.18,29.88,0.5254,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Aspirin,Harris Teeter,9.44,9.44,,ASPIRIN 325 MG TABLET,00536105405,0.01053,30.0,0.3159,29.88,29.88,0.0,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Aspirin,Food Lion Pharmacy,14.34,9.44,,ASPIRIN 325 MG TABLET,00536105405,0.01053,30.0,0.3159,45.39,29.88,0.5191,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Aspirin,Publix,2.0,9.44,,ASPIRIN 325 MG TABLET,00536105405,0.01053,30.0,0.3159,6.33,29.88,0.7881,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Aspirin,"Community, a Walgreens Pharmacy",2.0,9.44,,ASPIRIN 325 MG TABLET,00536105405,0.01053,30.0,0.3159,6.33,29.88,0.7881,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Aspirin,Kroger Pharmacy,9.44,9.44,,ASPIRIN 325 MG TABLET,00536105405,0.01053,30.0,0.3159,29.88,29.88,0.0,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Atorvastatin,Costco,19.16,13.28,,ATORVASTATIN 20 MG TABLET,68180063609,0.05597,30.0,1.6791,11.41,7.91,0.4428,ok_contains,yes,markup_drift>30%
+national,Atorvastatin,Publix,4.09,13.28,,ATORVASTATIN 20 MG TABLET,68180063609,0.05597,30.0,1.6791,2.44,7.91,0.692,ok_contains,yes,markup_drift>30%
+national,Azelastine,Walmart,17.67,17.67,,AZELASTINE 0.15% NASAL SPRAY,45802002683,0.62319,1.0,0.6232,28.35,28.35,0.0,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Azelastine,CVS Pharmacy,19.17,17.67,,AZELASTINE 0.15% NASAL SPRAY,45802002683,0.62319,1.0,0.6232,30.76,28.35,0.0849,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Azelastine,Walgreens,15.29,17.67,,AZELASTINE 0.15% NASAL SPRAY,45802002683,0.62319,1.0,0.6232,24.53,28.35,0.1347,ok_starts_with,yes,review_baseline_mapping
+national,Azelastine,Costco,10.49,17.67,,AZELASTINE 0.15% NASAL SPRAY,45802002683,0.62319,1.0,0.6232,16.83,28.35,0.4063,ok_starts_with,yes,markup_drift>30%; review_baseline_mapping
+national,Azelastine,Target (CVS),19.17,17.67,,AZELASTINE 0.15% NASAL SPRAY,45802002683,0.62319,1.0,0.6232,30.76,28.35,0.0849,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Azelastine,Harris Teeter,22.56,17.67,,AZELASTINE 0.15% NASAL SPRAY,45802002683,0.62319,1.0,0.6232,36.2,28.35,0.2767,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Azelastine,Walmart Neighborhood Market,17.67,17.67,,AZELASTINE 0.15% NASAL SPRAY,45802002683,0.62319,1.0,0.6232,28.35,28.35,0.0,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Azelastine,Publix,4.01,17.67,,AZELASTINE 0.15% NASAL SPRAY,45802002683,0.62319,1.0,0.6232,6.43,28.35,0.7731,ok_starts_with,yes,markup_drift>30%; review_baseline_mapping
+national,Azithromycin,CVS Pharmacy,15.74,12.74,,AZITHROMYCIN 250 MG TABLET,59762219803,0.48366,30.0,14.5098,1.08,0.88,0.2355,ok_contains,yes,below_wholesale_floor; review_baseline_mapping
+national,Azithromycin,Walgreens,7.94,12.74,,AZITHROMYCIN 250 MG TABLET,59762219803,0.48366,30.0,14.5098,0.55,0.88,0.3768,ok_contains,yes,markup_drift>30%; below_wholesale_floor; review_baseline_mapping
+national,Azithromycin,Walmart,12.74,12.74,,AZITHROMYCIN 250 MG TABLET,59762219803,0.48366,30.0,14.5098,0.88,0.88,0.0,ok_contains,yes,below_wholesale_floor; review_baseline_mapping
+national,Azithromycin,Walmart Neighborhood Market,12.74,12.74,,AZITHROMYCIN 250 MG TABLET,59762219803,0.48366,30.0,14.5098,0.88,0.88,0.0,ok_contains,yes,below_wholesale_floor; review_baseline_mapping
+national,Azithromycin,Target (CVS),15.74,12.74,,AZITHROMYCIN 250 MG TABLET,59762219803,0.48366,30.0,14.5098,1.08,0.88,0.2355,ok_contains,yes,below_wholesale_floor; review_baseline_mapping
+national,Azithromycin,Costco,5.99,12.74,,AZITHROMYCIN 250 MG TABLET,59762219803,0.48366,30.0,14.5098,0.41,0.88,0.5298,ok_contains,yes,markup_drift>30%; below_wholesale_floor; review_baseline_mapping
+national,Azithromycin,Sams Club,46.32,12.74,,AZITHROMYCIN 250 MG TABLET,59762219803,0.48366,30.0,14.5098,3.19,0.88,2.6358,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Azithromycin,Harris Teeter,9.38,12.74,,AZITHROMYCIN 250 MG TABLET,59762219803,0.48366,30.0,14.5098,0.65,0.88,0.2637,ok_contains,yes,below_wholesale_floor; review_baseline_mapping
+national,Azithromycin,Publix,2.0,12.74,,AZITHROMYCIN 250 MG TABLET,59762219803,0.48366,30.0,14.5098,0.14,0.88,0.843,ok_contains,yes,markup_drift>30%; below_wholesale_floor; review_baseline_mapping
+national,Bactrim,CVS Pharmacy,19.57,10.91,,SULFAMETHOXAZOLE-TMP SS TABLET,53489014501,0.06699,30.0,2.0097,9.74,5.43,0.7938,ok_starts_with,yes,markup_drift>30%
+national,Bactrim,Walgreens,3.67,10.91,,SULFAMETHOXAZOLE-TMP SS TABLET,53489014501,0.06699,30.0,2.0097,1.83,5.43,0.6636,ok_starts_with,yes,markup_drift>30%
+national,Bactrim,Costco,4.29,10.91,,SULFAMETHOXAZOLE-TMP SS TABLET,53489014501,0.06699,30.0,2.0097,2.13,5.43,0.6068,ok_starts_with,yes,markup_drift>30%
+national,Bactrim,Target (CVS),19.57,10.91,,SULFAMETHOXAZOLE-TMP SS TABLET,53489014501,0.06699,30.0,2.0097,9.74,5.43,0.7938,ok_starts_with,yes,markup_drift>30%
+national,Bactrim,Publix,2.46,10.91,,SULFAMETHOXAZOLE-TMP SS TABLET,53489014501,0.06699,30.0,2.0097,1.22,5.43,0.7745,ok_starts_with,yes,markup_drift>30%
+national,Benzocaine,Walmart,15.91,14.91,0.0671,,,0.0,1.0,,,,,not_found,yes,nadac_not_found
+national,Benzocaine,Walgreens,8.63,14.91,0.4212,,,0.0,1.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Benzocaine,Walmart Neighborhood Market,15.91,14.91,0.0671,,,0.0,1.0,,,,,not_found,yes,nadac_not_found
+national,Benzocaine,Costco,9.24,14.91,0.3803,,,0.0,1.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Benzocaine,Harris Teeter,14.91,14.91,0.0,,,0.0,1.0,,,,,not_found,yes,nadac_not_found
+national,Benzocaine,Food Lion Pharmacy,20.21,14.91,0.3555,,,0.0,1.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Benzocaine,Publix,7.2,14.91,0.5171,,,0.0,1.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Benzocaine,"Community, a Walgreens Pharmacy",8.63,14.91,0.4212,,,0.0,1.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Benzocaine,Kroger Pharmacy,14.91,14.91,0.0,,,0.0,1.0,,,,,not_found,yes,nadac_not_found
+national,Bisacodyl,Walgreens,3.3,10.22,,BISACODYL EC 5 MG TABLET,00904674880,0.0417,30.0,1.251,2.64,8.17,0.6771,ok_exact,yes,markup_drift>30%
+national,Bisacodyl,Costco,4.02,10.22,,BISACODYL EC 5 MG TABLET,00904674880,0.0417,30.0,1.251,3.21,8.17,0.6067,ok_exact,yes,markup_drift>30%
+national,Bisacodyl,Harris Teeter,18.16,10.22,,BISACODYL EC 5 MG TABLET,00904674880,0.0417,30.0,1.251,14.52,8.17,0.7769,ok_exact,yes,markup_drift>30%
+national,Bisacodyl,Food Lion Pharmacy,14.05,10.22,,BISACODYL EC 5 MG TABLET,00904674880,0.0417,30.0,1.251,11.23,8.17,0.3748,ok_exact,yes,markup_drift>30%
+national,Bisacodyl,Publix,6.66,10.22,,BISACODYL EC 5 MG TABLET,00904674880,0.0417,30.0,1.251,5.32,8.17,0.3483,ok_exact,yes,markup_drift>30%
+national,Bisacodyl,"Community, a Walgreens Pharmacy",2.52,10.22,,BISACODYL EC 5 MG TABLET,00904674880,0.0417,30.0,1.251,2.01,8.17,0.7534,ok_exact,yes,markup_drift>30%
+national,Bisacodyl,Kroger Pharmacy,18.16,10.22,,BISACODYL EC 5 MG TABLET,00904674880,0.0417,30.0,1.251,14.52,8.17,0.7769,ok_exact,yes,markup_drift>30%
+national,Calcium,Walmart,13.58,13.08,,CALCIUM ANTACID 500 MG CHW TAB,00536104815,0.01341,30.0,0.4023,33.76,32.51,0.0382,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Calcium,CVS Pharmacy,30.91,13.08,,CALCIUM ANTACID 500 MG CHW TAB,00536104815,0.01341,30.0,0.4023,76.83,32.51,1.3631,ok_starts_with,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Calcium,Walgreens,6.22,13.08,,CALCIUM ANTACID 500 MG CHW TAB,00536104815,0.01341,30.0,0.4023,15.46,32.51,0.5245,ok_starts_with,yes,markup_drift>30%; review_baseline_mapping
+national,Calcium,Walmart Neighborhood Market,13.58,13.08,,CALCIUM ANTACID 500 MG CHW TAB,00536104815,0.01341,30.0,0.4023,33.76,32.51,0.0382,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Calcium,Costco,7.58,13.08,,CALCIUM ANTACID 500 MG CHW TAB,00536104815,0.01341,30.0,0.4023,18.84,32.51,0.4205,ok_starts_with,yes,markup_drift>30%; review_baseline_mapping
+national,Calcium,Target (CVS),30.91,13.08,,CALCIUM ANTACID 500 MG CHW TAB,00536104815,0.01341,30.0,0.4023,76.83,32.51,1.3631,ok_starts_with,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Calcium,Harris Teeter,12.58,13.08,,CALCIUM ANTACID 500 MG CHW TAB,00536104815,0.01341,30.0,0.4023,31.27,32.51,0.0382,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Calcium,Food Lion Pharmacy,17.76,13.08,,CALCIUM ANTACID 500 MG CHW TAB,00536104815,0.01341,30.0,0.4023,44.15,32.51,0.3578,ok_starts_with,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Calcium,Publix,5.74,13.08,,CALCIUM ANTACID 500 MG CHW TAB,00536104815,0.01341,30.0,0.4023,14.27,32.51,0.5612,ok_starts_with,yes,markup_drift>30%; review_baseline_mapping
+national,Calcium,Kroger Pharmacy,12.58,13.08,,CALCIUM ANTACID 500 MG CHW TAB,00536104815,0.01341,30.0,0.4023,31.27,32.51,0.0382,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Capsaicin,Walgreens,7.3,17.8,,CAPSAICIN 0.025% CREAM,00536252525,0.08859,1.0,0.0886,82.39,200.9,0.5899,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Capsaicin,Walmart,17.8,17.8,,CAPSAICIN 0.025% CREAM,00536252525,0.08859,1.0,0.0886,200.9,200.9,0.0,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Capsaicin,Walmart Neighborhood Market,17.8,17.8,,CAPSAICIN 0.025% CREAM,00536252525,0.08859,1.0,0.0886,200.9,200.9,0.0,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Capsaicin,Costco,13.19,17.8,,CAPSAICIN 0.025% CREAM,00536252525,0.08859,1.0,0.0886,148.87,200.9,0.259,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Capsaicin,Harris Teeter,25.64,17.8,,CAPSAICIN 0.025% CREAM,00536252525,0.08859,1.0,0.0886,289.39,200.9,0.4404,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Capsaicin,Food Lion Pharmacy,23.65,17.8,,CAPSAICIN 0.025% CREAM,00536252525,0.08859,1.0,0.0886,266.93,200.9,0.3287,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Capsaicin,Publix,14.14,17.8,,CAPSAICIN 0.025% CREAM,00536252525,0.08859,1.0,0.0886,159.59,200.9,0.2056,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Capsaicin,"Community, a Walgreens Pharmacy",7.3,17.8,,CAPSAICIN 0.025% CREAM,00536252525,0.08859,1.0,0.0886,82.39,200.9,0.5899,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Capsaicin,Kroger Pharmacy,25.64,17.8,,CAPSAICIN 0.025% CREAM,00536252525,0.08859,1.0,0.0886,289.39,200.9,0.4404,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Cetirizine,Walmart,16.48,9.93,,CETIRIZINE HCL 10 MG TABLET,16714079904,0.07595,30.0,2.2785,7.23,4.36,0.6596,ok_contains,yes,markup_drift>30%
+national,Cetirizine,Walgreens,2.0,9.93,,CETIRIZINE HCL 10 MG TABLET,16714079904,0.07595,30.0,2.2785,0.88,4.36,0.7986,ok_contains,yes,markup_drift>30%; below_wholesale_floor
+national,Cetirizine,Walmart Neighborhood Market,16.48,9.93,,CETIRIZINE HCL 10 MG TABLET,16714079904,0.07595,30.0,2.2785,7.23,4.36,0.6596,ok_contains,yes,markup_drift>30%
+national,Cetirizine,Food Lion Pharmacy,16.52,9.93,,CETIRIZINE HCL 10 MG TABLET,16714079904,0.07595,30.0,2.2785,7.25,4.36,0.6636,ok_contains,yes,markup_drift>30%
+national,Cetirizine,Costco,5.72,9.93,,CETIRIZINE HCL 10 MG TABLET,16714079904,0.07595,30.0,2.2785,2.51,4.36,0.424,ok_contains,yes,markup_drift>30%
+national,Cetirizine,Publix,4.34,9.93,,CETIRIZINE HCL 10 MG TABLET,16714079904,0.07595,30.0,2.2785,1.9,4.36,0.5629,ok_contains,yes,markup_drift>30%
+national,Cetirizine,"Community, a Walgreens Pharmacy",2.0,9.93,,CETIRIZINE HCL 10 MG TABLET,16714079904,0.07595,30.0,2.2785,0.88,4.36,0.7986,ok_contains,yes,markup_drift>30%; below_wholesale_floor
+national,Chlorpheniramine,Walmart,10.25,10.25,0.0,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Chlorpheniramine,Walgreens,2.76,10.25,0.7307,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Chlorpheniramine,Walmart Neighborhood Market,10.25,10.25,0.0,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Chlorpheniramine,Costco,4.25,10.25,0.5854,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Chlorpheniramine,Harris Teeter,18.5,10.25,0.8049,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Chlorpheniramine,Food Lion Pharmacy,14.26,10.25,0.3912,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Chlorpheniramine,Publix,8.5,10.25,0.1707,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Chlorpheniramine,"Community, a Walgreens Pharmacy",2.76,10.25,0.7307,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Chlorpheniramine,Kroger Pharmacy,18.5,10.25,0.8049,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Clotrimazole,CVS Pharmacy,18.08,16.78,,CLOTRIMAZOLE 1% TOPICAL CREAM,68462018117,0.18081,1.0,0.1808,100.0,92.81,0.0775,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Clotrimazole,Walgreens,6.14,16.78,,CLOTRIMAZOLE 1% TOPICAL CREAM,68462018117,0.18081,1.0,0.1808,33.96,92.81,0.6341,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Clotrimazole,Walmart,16.78,16.78,,CLOTRIMAZOLE 1% TOPICAL CREAM,68462018117,0.18081,1.0,0.1808,92.81,92.81,0.0,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Clotrimazole,Walmart Neighborhood Market,16.78,16.78,,CLOTRIMAZOLE 1% TOPICAL CREAM,68462018117,0.18081,1.0,0.1808,92.81,92.81,0.0,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Clotrimazole,Costco,13.99,16.78,,CLOTRIMAZOLE 1% TOPICAL CREAM,68462018117,0.18081,1.0,0.1808,77.38,92.81,0.1663,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Clotrimazole,Target (CVS),18.08,16.78,,CLOTRIMAZOLE 1% TOPICAL CREAM,68462018117,0.18081,1.0,0.1808,100.0,92.81,0.0775,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Clotrimazole,Harris Teeter,18.24,16.78,,CLOTRIMAZOLE 1% TOPICAL CREAM,68462018117,0.18081,1.0,0.1808,100.88,92.81,0.087,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Clotrimazole,Publix,7.49,16.78,,CLOTRIMAZOLE 1% TOPICAL CREAM,68462018117,0.18081,1.0,0.1808,41.43,92.81,0.5536,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Dextromethorphan,Walmart,32.75,32.75,,DEXTROMETHORPHAN ER 30 MG/5 ML,45802043321,0.06269,1.0,0.0627,522.33,522.33,0.0,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Dextromethorphan,Walgreens,19.07,32.75,,DEXTROMETHORPHAN ER 30 MG/5 ML,45802043321,0.06269,1.0,0.0627,304.15,522.33,0.4177,ok_starts_with,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Dextromethorphan,Walmart Neighborhood Market,32.75,32.75,,DEXTROMETHORPHAN ER 30 MG/5 ML,45802043321,0.06269,1.0,0.0627,522.33,522.33,0.0,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Dextromethorphan,Costco,26.75,32.75,,DEXTROMETHORPHAN ER 30 MG/5 ML,45802043321,0.06269,1.0,0.0627,426.63,522.33,0.1832,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Dextromethorphan,Harris Teeter,36.82,32.75,,DEXTROMETHORPHAN ER 30 MG/5 ML,45802043321,0.06269,1.0,0.0627,587.24,522.33,0.1243,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Dextromethorphan,Food Lion Pharmacy,37.89,32.75,,DEXTROMETHORPHAN ER 30 MG/5 ML,45802043321,0.06269,1.0,0.0627,604.31,522.33,0.1569,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Dextromethorphan,Publix,25.32,32.75,,DEXTROMETHORPHAN ER 30 MG/5 ML,45802043321,0.06269,1.0,0.0627,403.83,522.33,0.2269,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Dextromethorphan,"Community, a Walgreens Pharmacy",19.07,32.75,,DEXTROMETHORPHAN ER 30 MG/5 ML,45802043321,0.06269,1.0,0.0627,304.15,522.33,0.4177,ok_starts_with,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Dextromethorphan,Kroger Pharmacy,36.82,32.75,,DEXTROMETHORPHAN ER 30 MG/5 ML,45802043321,0.06269,1.0,0.0627,587.24,522.33,0.1243,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Diphenhydramine,Walgreens,2.0,10.66,,DIPHENHYDRAMINE 25 MG CAPSULE,42806064810,0.03324,30.0,0.9972,2.01,10.69,0.8124,ok_exact,yes,markup_drift>30%
+national,Diphenhydramine,Costco,5.09,10.66,,DIPHENHYDRAMINE 25 MG CAPSULE,42806064810,0.03324,30.0,0.9972,5.1,10.69,0.5225,ok_exact,yes,markup_drift>30%
+national,Diphenhydramine,Harris Teeter,19.66,10.66,,DIPHENHYDRAMINE 25 MG CAPSULE,42806064810,0.03324,30.0,0.9972,19.72,10.69,0.8443,ok_exact,yes,markup_drift>30%
+national,Diphenhydramine,Food Lion Pharmacy,14.6,10.66,,DIPHENHYDRAMINE 25 MG CAPSULE,42806064810,0.03324,30.0,0.9972,14.64,10.69,0.3696,ok_exact,yes,markup_drift>30%
+national,Diphenhydramine,"Community, a Walgreens Pharmacy",2.0,10.66,,DIPHENHYDRAMINE 25 MG CAPSULE,42806064810,0.03324,30.0,0.9972,2.01,10.69,0.8124,ok_exact,yes,markup_drift>30%
+national,Diphenhydramine,Kroger Pharmacy,19.66,10.66,,DIPHENHYDRAMINE 25 MG CAPSULE,42806064810,0.03324,30.0,0.9972,19.72,10.69,0.8443,ok_exact,yes,markup_drift>30%
+national,Duloxetine,CVS Pharmacy,16.74,16.15,,DULOXETINE HCL DR 40 MG CAP,27241016430,2.25863,30.0,67.7589,0.25,0.24,0.0365,ok_starts_with,yes,below_wholesale_floor; review_baseline_mapping
+national,Duloxetine,Walgreens,15.56,16.15,,DULOXETINE HCL DR 40 MG CAP,27241016430,2.25863,30.0,67.7589,0.23,0.24,0.0365,ok_starts_with,yes,below_wholesale_floor; review_baseline_mapping
+national,Duloxetine,Walmart,14.47,16.15,,DULOXETINE HCL DR 40 MG CAP,27241016430,2.25863,30.0,67.7589,0.21,0.24,0.104,ok_starts_with,yes,below_wholesale_floor; review_baseline_mapping
+national,Duloxetine,Costco,25.1,16.15,,DULOXETINE HCL DR 40 MG CAP,27241016430,2.25863,30.0,67.7589,0.37,0.24,0.5542,ok_starts_with,yes,markup_drift>30%; below_wholesale_floor; review_baseline_mapping
+national,Duloxetine,Target (CVS),16.74,16.15,,DULOXETINE HCL DR 40 MG CAP,27241016430,2.25863,30.0,67.7589,0.25,0.24,0.0365,ok_starts_with,yes,below_wholesale_floor; review_baseline_mapping
+national,Duloxetine,Walmart Neighborhood Market,14.47,16.15,,DULOXETINE HCL DR 40 MG CAP,27241016430,2.25863,30.0,67.7589,0.21,0.24,0.104,ok_starts_with,yes,below_wholesale_floor; review_baseline_mapping
+national,Duloxetine,Harris Teeter,16.82,16.15,,DULOXETINE HCL DR 40 MG CAP,27241016430,2.25863,30.0,67.7589,0.25,0.24,0.0415,ok_starts_with,yes,below_wholesale_floor; review_baseline_mapping
+national,Duloxetine,Publix,4.32,16.15,,DULOXETINE HCL DR 40 MG CAP,27241016430,2.25863,30.0,67.7589,0.06,0.24,0.7325,ok_starts_with,yes,markup_drift>30%; below_wholesale_floor; review_baseline_mapping
+national,Escitalopram,Walgreens,27.73,12.5,,ESCITALOPRAM 10 MG TABLET,65862037405,0.04836,30.0,1.4508,19.11,8.62,1.2184,ok_contains,yes,markup_drift>30%
+national,Escitalopram,Sams Club,7.01,12.5,,ESCITALOPRAM 10 MG TABLET,65862037405,0.04836,30.0,1.4508,4.83,8.62,0.4392,ok_contains,yes,markup_drift>30%
+national,Escitalopram,Costco,19.69,12.5,,ESCITALOPRAM 10 MG TABLET,65862037405,0.04836,30.0,1.4508,13.57,8.62,0.5752,ok_contains,yes,markup_drift>30%
+national,Esomeprazole,Walmart,3.55,15.79,,ESOMEPRAZOLE MAG DR 40 MG CAP,00378235177,0.19846,30.0,5.9538,0.6,2.65,0.7751,ok_starts_with,yes,markup_drift>30%; below_wholesale_floor
+national,Esomeprazole,Walgreens,7.46,15.79,,ESOMEPRAZOLE MAG DR 40 MG CAP,00378235177,0.19846,30.0,5.9538,1.25,2.65,0.5274,ok_starts_with,yes,markup_drift>30%
+national,Esomeprazole,Walmart Neighborhood Market,3.55,15.79,,ESOMEPRAZOLE MAG DR 40 MG CAP,00378235177,0.19846,30.0,5.9538,0.6,2.65,0.7751,ok_starts_with,yes,markup_drift>30%; below_wholesale_floor
+national,Famotidine,Walgreens,31.1,14.63,,FAMOTIDINE 20 MG TABLET,63739064510,0.03379,30.0,1.0137,30.68,14.43,1.1258,ok_contains,yes,markup_drift>30%; above_retail_ceiling
+national,Famotidine,Costco,5.99,14.63,,FAMOTIDINE 20 MG TABLET,63739064510,0.03379,30.0,1.0137,5.91,14.43,0.5906,ok_contains,yes,markup_drift>30%
+national,Famotidine,Publix,6.92,14.63,,FAMOTIDINE 20 MG TABLET,63739064510,0.03379,30.0,1.0137,6.83,14.43,0.527,ok_contains,yes,markup_drift>30%
+national,Fexofenadine,Walmart,8.45,9.52,,FEXOFENADINE HCL 180 MG TABLET,00378078205,0.28336,30.0,8.5008,0.99,1.12,0.1124,ok_contains,yes,below_wholesale_floor; review_baseline_mapping
+national,Fexofenadine,Walgreens,2.0,9.52,,FEXOFENADINE HCL 180 MG TABLET,00378078205,0.28336,30.0,8.5008,0.24,1.12,0.7899,ok_contains,yes,markup_drift>30%; below_wholesale_floor; review_baseline_mapping
+national,Fexofenadine,Costco,10.0,9.52,,FEXOFENADINE HCL 180 MG TABLET,00378078205,0.28336,30.0,8.5008,1.18,1.12,0.0504,ok_contains,yes,below_wholesale_floor; review_baseline_mapping
+national,Fexofenadine,Walmart Neighborhood Market,8.13,9.52,,FEXOFENADINE HCL 180 MG TABLET,00378078205,0.28336,30.0,8.5008,0.96,1.12,0.146,ok_contains,yes,below_wholesale_floor; review_baseline_mapping
+national,Fexofenadine,Harris Teeter,26.01,9.52,,FEXOFENADINE HCL 180 MG TABLET,00378078205,0.28336,30.0,8.5008,3.06,1.12,1.7321,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Fexofenadine,Food Lion Pharmacy,18.14,9.52,,FEXOFENADINE HCL 180 MG TABLET,00378078205,0.28336,30.0,8.5008,2.13,1.12,0.9055,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Fexofenadine,Publix,9.52,9.52,,FEXOFENADINE HCL 180 MG TABLET,00378078205,0.28336,30.0,8.5008,1.12,1.12,0.0,ok_contains,yes,below_wholesale_floor; review_baseline_mapping
+national,Fexofenadine,"Community, a Walgreens Pharmacy",2.0,9.52,,FEXOFENADINE HCL 180 MG TABLET,00378078205,0.28336,30.0,8.5008,0.24,1.12,0.7899,ok_contains,yes,markup_drift>30%; below_wholesale_floor; review_baseline_mapping
+national,Fexofenadine,Kroger Pharmacy,26.01,9.52,,FEXOFENADINE HCL 180 MG TABLET,00378078205,0.28336,30.0,8.5008,3.06,1.12,1.7321,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Fluticasone_Salmeterol,CVS Pharmacy,48.16,97.08,,FLUTICASONE PROP 50 MCG SPRAY,50383070016,0.27257,1.0,0.2726,176.67,356.13,0.5039,ok_starts_with,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Fluticasone_Salmeterol,Walmart,104.98,97.08,,FLUTICASONE PROP 50 MCG SPRAY,50383070016,0.27257,1.0,0.2726,385.11,356.13,0.0814,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Fluticasone_Salmeterol,Walgreens,112.81,97.08,,FLUTICASONE PROP 50 MCG SPRAY,50383070016,0.27257,1.0,0.2726,413.83,356.13,0.162,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Fluticasone_Salmeterol,Walmart Neighborhood Market,104.98,97.08,,FLUTICASONE PROP 50 MCG SPRAY,50383070016,0.27257,1.0,0.2726,385.11,356.13,0.0814,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Fluticasone_Salmeterol,Harris Teeter,95.39,97.08,,FLUTICASONE PROP 50 MCG SPRAY,50383070016,0.27257,1.0,0.2726,349.93,356.13,0.0174,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Fluticasone_Salmeterol,Costco,98.99,97.08,,FLUTICASONE PROP 50 MCG SPRAY,50383070016,0.27257,1.0,0.2726,363.13,356.13,0.0197,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Fluticasone_Salmeterol,Target (CVS),48.16,97.08,,FLUTICASONE PROP 50 MCG SPRAY,50383070016,0.27257,1.0,0.2726,176.67,356.13,0.5039,ok_starts_with,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Fluticasone_Salmeterol,Publix,97.08,97.08,,FLUTICASONE PROP 50 MCG SPRAY,50383070016,0.27257,1.0,0.2726,356.13,356.13,0.0,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Fluticasone_Salmeterol,Kroger Pharmacy,95.39,97.08,,FLUTICASONE PROP 50 MCG SPRAY,50383070016,0.27257,1.0,0.2726,349.93,356.13,0.0174,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Guaifenesin,Walmart,11.12,11.12,,GUAIFENESIN 100 MG/5 ML LIQUID,58657050916,0.01174,1.0,0.0117,950.43,950.43,0.0,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Guaifenesin,Walgreens,3.09,11.12,,GUAIFENESIN 100 MG/5 ML LIQUID,58657050916,0.01174,1.0,0.0117,264.1,950.43,0.7221,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Guaifenesin,Walmart Neighborhood Market,11.12,11.12,,GUAIFENESIN 100 MG/5 ML LIQUID,58657050916,0.01174,1.0,0.0117,950.43,950.43,0.0,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Guaifenesin,Costco,5.6,11.12,,GUAIFENESIN 100 MG/5 ML LIQUID,58657050916,0.01174,1.0,0.0117,478.63,950.43,0.4964,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Guaifenesin,Harris Teeter,20.03,11.12,,GUAIFENESIN 100 MG/5 ML LIQUID,58657050916,0.01174,1.0,0.0117,1711.97,950.43,0.8013,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Guaifenesin,Food Lion Pharmacy,15.68,11.12,,GUAIFENESIN 100 MG/5 ML LIQUID,58657050916,0.01174,1.0,0.0117,1340.17,950.43,0.4101,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Guaifenesin,Publix,8.53,11.12,,GUAIFENESIN 100 MG/5 ML LIQUID,58657050916,0.01174,1.0,0.0117,729.06,950.43,0.2329,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Guaifenesin,"Community, a Walgreens Pharmacy",3.09,11.12,,GUAIFENESIN 100 MG/5 ML LIQUID,58657050916,0.01174,1.0,0.0117,264.1,950.43,0.7221,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Guaifenesin,Kroger Pharmacy,20.03,11.12,,GUAIFENESIN 100 MG/5 ML LIQUID,58657050916,0.01174,1.0,0.0117,1711.97,950.43,0.8013,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Hydrocortisone,Walmart,22.34,16.44,,HYDROCORTISONE 1% OINTMENT,24385027603,0.09624,1.0,0.0962,232.22,170.89,0.3589,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Hydrocortisone,CVS Pharmacy,22.72,16.44,,HYDROCORTISONE 1% OINTMENT,24385027603,0.09624,1.0,0.0962,236.17,170.89,0.382,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Hydrocortisone,Walgreens,15.77,16.44,,HYDROCORTISONE 1% OINTMENT,24385027603,0.09624,1.0,0.0962,163.93,170.89,0.0408,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Hydrocortisone,Walmart Neighborhood Market,15.73,16.44,,HYDROCORTISONE 1% OINTMENT,24385027603,0.09624,1.0,0.0962,163.51,170.89,0.0432,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Hydrocortisone,Costco,12.99,16.44,,HYDROCORTISONE 1% OINTMENT,24385027603,0.09624,1.0,0.0962,135.03,170.89,0.2099,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Hydrocortisone,Target (CVS),22.72,16.44,,HYDROCORTISONE 1% OINTMENT,24385027603,0.09624,1.0,0.0962,236.17,170.89,0.382,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Hydrocortisone,Harris Teeter,16.44,16.44,,HYDROCORTISONE 1% OINTMENT,24385027603,0.09624,1.0,0.0962,170.89,170.89,0.0,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Hydrocortisone,Food Lion Pharmacy,16.44,16.44,,HYDROCORTISONE 1% OINTMENT,24385027603,0.09624,1.0,0.0962,170.89,170.89,0.0,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Hydrocortisone,Publix,9.53,16.44,,HYDROCORTISONE 1% OINTMENT,24385027603,0.09624,1.0,0.0962,99.06,170.89,0.4203,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Hydrocortisone,Kroger Pharmacy,16.44,16.44,,HYDROCORTISONE 1% OINTMENT,24385027603,0.09624,1.0,0.0962,170.89,170.89,0.0,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Ibuprofen,CVS Pharmacy,20.23,8.92,,IBUPROFEN 200 MG TABLET,70000030802,0.03382,30.0,1.0146,19.94,8.79,1.2679,ok_exact,yes,markup_drift>30%
+national,Ibuprofen,Walgreens,5.57,8.92,,IBUPROFEN 200 MG TABLET,70000030802,0.03382,30.0,1.0146,5.49,8.79,0.3756,ok_exact,yes,markup_drift>30%
+national,Ibuprofen,Walmart,15.2,8.92,,IBUPROFEN 200 MG TABLET,70000030802,0.03382,30.0,1.0146,14.98,8.79,0.704,ok_exact,yes,markup_drift>30%
+national,Ibuprofen,Target (CVS),20.23,8.92,,IBUPROFEN 200 MG TABLET,70000030802,0.03382,30.0,1.0146,19.94,8.79,1.2679,ok_exact,yes,markup_drift>30%
+national,Ibuprofen,Costco,3.83,8.92,,IBUPROFEN 200 MG TABLET,70000030802,0.03382,30.0,1.0146,3.77,8.79,0.5706,ok_exact,yes,markup_drift>30%
+national,Ibuprofen,Walmart Neighborhood Market,15.2,8.92,,IBUPROFEN 200 MG TABLET,70000030802,0.03382,30.0,1.0146,14.98,8.79,0.704,ok_exact,yes,markup_drift>30%
+national,Ibuprofen,Publix,3.11,8.92,,IBUPROFEN 200 MG TABLET,70000030802,0.03382,30.0,1.0146,3.07,8.79,0.6513,ok_exact,yes,markup_drift>30%
+national,Lansoprazole,Walmart,9.51,17.1,,LANSOPRAZOLE DR 15 MG CAPSULE,62756092383,0.27596,30.0,8.2788,1.15,2.07,0.444,ok_starts_with,yes,markup_drift>30%; below_wholesale_floor
+national,Lansoprazole,Walgreens,4.18,17.1,,LANSOPRAZOLE DR 15 MG CAPSULE,62756092383,0.27596,30.0,8.2788,0.5,2.07,0.7556,ok_starts_with,yes,markup_drift>30%; below_wholesale_floor
+national,Lansoprazole,Walmart Neighborhood Market,9.51,17.1,,LANSOPRAZOLE DR 15 MG CAPSULE,62756092383,0.27596,30.0,8.2788,1.15,2.07,0.444,ok_starts_with,yes,markup_drift>30%; below_wholesale_floor
+national,Lansoprazole,Publix,22.82,17.1,,LANSOPRAZOLE DR 15 MG CAPSULE,62756092383,0.27596,30.0,8.2788,2.76,2.07,0.3341,ok_starts_with,yes,markup_drift>30%
+national,Loperamide,Walgreens,6.15,11.5,,LOPERAMIDE 2 MG CAPSULE,00093031101,0.29071,30.0,8.7213,0.71,1.32,0.4652,ok_starts_with,yes,markup_drift>30%; below_wholesale_floor
+national,Loperamide,Harris Teeter,22.4,11.5,,LOPERAMIDE 2 MG CAPSULE,00093031101,0.29071,30.0,8.7213,2.57,1.32,0.9478,ok_starts_with,yes,markup_drift>30%
+national,Loperamide,Food Lion Pharmacy,17.7,11.5,,LOPERAMIDE 2 MG CAPSULE,00093031101,0.29071,30.0,8.7213,2.03,1.32,0.5391,ok_starts_with,yes,markup_drift>30%
+national,Loperamide,"Community, a Walgreens Pharmacy",6.15,11.5,,LOPERAMIDE 2 MG CAPSULE,00093031101,0.29071,30.0,8.7213,0.71,1.32,0.4652,ok_starts_with,yes,markup_drift>30%; below_wholesale_floor
+national,Loratadine,Walgreens,2.0,7.38,,LORATADINE 10 MG TABLET,45802065087,0.05757,30.0,1.7271,1.16,4.27,0.729,ok_contains,yes,markup_drift>30%; below_wholesale_floor
+national,Loratadine,Costco,4.97,7.38,,LORATADINE 10 MG TABLET,45802065087,0.05757,30.0,1.7271,2.88,4.27,0.3266,ok_contains,yes,markup_drift>30%
+national,Loratadine,Harris Teeter,19.7,7.38,,LORATADINE 10 MG TABLET,45802065087,0.05757,30.0,1.7271,11.41,4.27,1.6694,ok_contains,yes,markup_drift>30%
+national,Loratadine,Food Lion Pharmacy,21.58,7.38,,LORATADINE 10 MG TABLET,45802065087,0.05757,30.0,1.7271,12.49,4.27,1.9241,ok_contains,yes,markup_drift>30%
+national,Loratadine,Publix,5.04,7.38,,LORATADINE 10 MG TABLET,45802065087,0.05757,30.0,1.7271,2.92,4.27,0.3171,ok_contains,yes,markup_drift>30%
+national,Loratadine,"Community, a Walgreens Pharmacy",2.0,7.38,,LORATADINE 10 MG TABLET,45802065087,0.05757,30.0,1.7271,1.16,4.27,0.729,ok_contains,yes,markup_drift>30%; below_wholesale_floor
+national,Loratadine,Kroger Pharmacy,19.7,7.38,,LORATADINE 10 MG TABLET,45802065087,0.05757,30.0,1.7271,11.41,4.27,1.6694,ok_contains,yes,markup_drift>30%
+national,Losartan,CVS Pharmacy,14.63,9.0,,LOSARTAN POTASSIUM 50 MG TAB,59746033490,0.06054,30.0,1.8162,8.06,4.96,0.6256,ok_exact,yes,markup_drift>30%
+national,Losartan,Walgreens,16.11,9.0,,LOSARTAN POTASSIUM 50 MG TAB,59746033490,0.06054,30.0,1.8162,8.87,4.96,0.79,ok_exact,yes,markup_drift>30%
+national,Losartan,Target (CVS),14.63,9.0,,LOSARTAN POTASSIUM 50 MG TAB,59746033490,0.06054,30.0,1.8162,8.06,4.96,0.6256,ok_exact,yes,markup_drift>30%
+national,Losartan,Sams Club,2.0,9.0,,LOSARTAN POTASSIUM 50 MG TAB,59746033490,0.06054,30.0,1.8162,1.1,4.96,0.7778,ok_exact,yes,markup_drift>30%; below_wholesale_floor
+national,Losartan,Costco,21.99,9.0,,LOSARTAN POTASSIUM 50 MG TAB,59746033490,0.06054,30.0,1.8162,12.11,4.96,1.4433,ok_exact,yes,markup_drift>30%
+national,Losartan,Publix,2.0,9.0,,LOSARTAN POTASSIUM 50 MG TAB,59746033490,0.06054,30.0,1.8162,1.1,4.96,0.7778,ok_exact,yes,markup_drift>30%; below_wholesale_floor
+national,Meclizine,Walgreens,2.38,12.99,,MECLIZINE 25 MG TABLET,00904651761,0.115,30.0,3.45,0.69,3.77,0.8168,ok_starts_with,yes,markup_drift>30%; below_wholesale_floor
+national,Meclizine,Publix,3.13,12.99,,MECLIZINE 25 MG TABLET,00904651761,0.115,30.0,3.45,0.91,3.77,0.759,ok_starts_with,yes,markup_drift>30%; below_wholesale_floor
+national,Meclizine,"Community, a Walgreens Pharmacy",2.0,12.99,,MECLIZINE 25 MG TABLET,00904651761,0.115,30.0,3.45,0.58,3.77,0.846,ok_starts_with,yes,markup_drift>30%; below_wholesale_floor
+national,Melatonin,Walgreens,4.27,11.0,0.6118,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Melatonin,Walmart,11.7,11.0,0.0636,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Melatonin,Walmart Neighborhood Market,11.18,11.0,0.0164,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Melatonin,Costco,5.7,11.0,0.4818,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Melatonin,Harris Teeter,11.0,11.0,0.0,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Melatonin,Food Lion Pharmacy,16.1,11.0,0.4636,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Melatonin,Publix,4.57,11.0,0.5845,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Melatonin,"Community, a Walgreens Pharmacy",4.27,11.0,0.6118,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Melatonin,Kroger Pharmacy,11.0,11.0,0.0,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Miconazole,Walmart,14.22,14.22,,SM MICONAZOLE 2% VAGINAL CREAM,49348087277,0.12832,1.0,0.1283,110.83,110.83,0.0,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Miconazole,Walgreens,6.28,14.22,,SM MICONAZOLE 2% VAGINAL CREAM,49348087277,0.12832,1.0,0.1283,48.95,110.83,0.5584,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Miconazole,Walmart Neighborhood Market,15.76,14.22,,SM MICONAZOLE 2% VAGINAL CREAM,49348087277,0.12832,1.0,0.1283,122.84,110.83,0.1083,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Miconazole,Costco,9.04,14.22,,SM MICONAZOLE 2% VAGINAL CREAM,49348087277,0.12832,1.0,0.1283,70.46,110.83,0.3643,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Miconazole,Harris Teeter,21.94,14.22,,SM MICONAZOLE 2% VAGINAL CREAM,49348087277,0.12832,1.0,0.1283,171.01,110.83,0.5429,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Miconazole,Food Lion Pharmacy,22.82,14.22,,SM MICONAZOLE 2% VAGINAL CREAM,49348087277,0.12832,1.0,0.1283,177.86,110.83,0.6048,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Miconazole,Publix,10.44,14.22,,SM MICONAZOLE 2% VAGINAL CREAM,49348087277,0.12832,1.0,0.1283,81.37,110.83,0.2658,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Miconazole,"Community, a Walgreens Pharmacy",6.07,14.22,,SM MICONAZOLE 2% VAGINAL CREAM,49348087277,0.12832,1.0,0.1283,47.31,110.83,0.5731,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Miconazole,Kroger Pharmacy,21.94,14.22,,SM MICONAZOLE 2% VAGINAL CREAM,49348087277,0.12832,1.0,0.1283,171.01,110.83,0.5429,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Minoxidil,Walmart,16.97,16.94,,MINOXIDIL 5% SOLUTION,00472009473,0.27807,1.0,0.2781,61.02,60.91,0.0018,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Minoxidil,Walgreens,2.0,16.94,,MINOXIDIL 5% SOLUTION,00472009473,0.27807,1.0,0.2781,7.19,60.91,0.8819,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Minoxidil,CVS Pharmacy,20.23,16.94,,MINOXIDIL 5% SOLUTION,00472009473,0.27807,1.0,0.2781,72.74,60.91,0.1942,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Minoxidil,Costco,3.66,16.94,,MINOXIDIL 5% SOLUTION,00472009473,0.27807,1.0,0.2781,13.16,60.91,0.7839,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Minoxidil,Walmart Neighborhood Market,16.97,16.94,,MINOXIDIL 5% SOLUTION,00472009473,0.27807,1.0,0.2781,61.02,60.91,0.0018,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Minoxidil,Target (CVS),20.23,16.94,,MINOXIDIL 5% SOLUTION,00472009473,0.27807,1.0,0.2781,72.74,60.91,0.1942,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Minoxidil,Harris Teeter,16.91,16.94,,MINOXIDIL 5% SOLUTION,00472009473,0.27807,1.0,0.2781,60.81,60.91,0.0018,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Minoxidil,Publix,2.0,16.94,,MINOXIDIL 5% SOLUTION,00472009473,0.27807,1.0,0.2781,7.19,60.91,0.8819,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Miralax,Walgreens,3.62,20.95,,POLYETHYLENE GLYCOL 3350 POWD,00904693126,1.34868,1.0,1.3487,2.68,15.53,0.8272,ok_contains,yes,markup_drift>30%
+national,Miralax,Food Lion Pharmacy,30.71,20.95,,POLYETHYLENE GLYCOL 3350 POWD,00904693126,1.34868,1.0,1.3487,22.77,15.53,0.4662,ok_contains,yes,markup_drift>30%
+national,Miralax,Publix,9.61,20.95,,POLYETHYLENE GLYCOL 3350 POWD,00904693126,1.34868,1.0,1.3487,7.13,15.53,0.5412,ok_contains,yes,markup_drift>30%
+national,Miralax,"Community, a Walgreens Pharmacy",3.62,20.95,,POLYETHYLENE GLYCOL 3350 POWD,00904693126,1.34868,1.0,1.3487,2.68,15.53,0.8272,ok_contains,yes,markup_drift>30%
+national,Miralax,Kroger Pharmacy,28.36,20.95,,POLYETHYLENE GLYCOL 3350 POWD,00904693126,1.34868,1.0,1.3487,21.03,15.53,0.354,ok_contains,yes,markup_drift>30%
+national,Naproxen,Costco,27.33,18.52,,NAPROXEN SODIUM 220 MG TABLET,49483060905,0.05948,30.0,1.7844,15.32,10.38,0.4757,ok_contains,yes,markup_drift>30%
+national,Naproxen,Publix,6.02,18.52,,NAPROXEN SODIUM 220 MG TABLET,49483060905,0.05948,30.0,1.7844,3.37,10.38,0.6749,ok_contains,yes,markup_drift>30%
+national,Nicotine,Walmart,75.7,59.46,,SM NICOTINE 21 MG/24HR PATCH,70677003201,1.74398,1.0,1.744,43.41,34.09,0.2731,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Nicotine,Walgreens,13.6,59.46,,SM NICOTINE 21 MG/24HR PATCH,70677003201,1.74398,1.0,1.744,7.8,34.09,0.7713,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Nicotine,Walmart Neighborhood Market,74.85,59.46,,SM NICOTINE 21 MG/24HR PATCH,70677003201,1.74398,1.0,1.744,42.92,34.09,0.2588,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Nicotine,Costco,47.1,59.46,,SM NICOTINE 21 MG/24HR PATCH,70677003201,1.74398,1.0,1.744,27.01,34.09,0.2079,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Nicotine,Harris Teeter,59.46,59.46,,SM NICOTINE 21 MG/24HR PATCH,70677003201,1.74398,1.0,1.744,34.09,34.09,0.0,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Nicotine,Food Lion Pharmacy,64.38,59.46,,SM NICOTINE 21 MG/24HR PATCH,70677003201,1.74398,1.0,1.744,36.92,34.09,0.0827,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Nicotine,Publix,47.96,59.46,,SM NICOTINE 21 MG/24HR PATCH,70677003201,1.74398,1.0,1.744,27.5,34.09,0.1934,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Nicotine,"Community, a Walgreens Pharmacy",13.6,59.46,,SM NICOTINE 21 MG/24HR PATCH,70677003201,1.74398,1.0,1.744,7.8,34.09,0.7713,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Nicotine,Kroger Pharmacy,59.46,59.46,,SM NICOTINE 21 MG/24HR PATCH,70677003201,1.74398,1.0,1.744,34.09,34.09,0.0,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Omega-3-Acid,CVS Pharmacy,35.68,30.46,0.1714,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Omega-3-Acid,Walgreens,71.74,30.46,1.3552,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Omega-3-Acid,Walmart,20.9,30.46,0.3139,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Omega-3-Acid,Walmart Neighborhood Market,20.9,30.46,0.3139,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Omega-3-Acid,Costco,27.0,30.46,0.1136,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Omega-3-Acid,Target (CVS),35.68,30.46,0.1714,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Omega-3-Acid,Harris Teeter,33.92,30.46,0.1136,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Omega-3-Acid,Publix,23.91,30.46,0.215,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Omeprazole,CVS Pharmacy,20.23,12.86,,OMEPRAZOLE DR 20 MG CAPSULE,60505395203,0.03412,14.0,0.4777,42.35,26.92,0.5731,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Omeprazole,Walgreens,18.33,12.86,,OMEPRAZOLE DR 20 MG CAPSULE,60505395203,0.03412,14.0,0.4777,38.37,26.92,0.4253,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Omeprazole,Walmart,5.17,12.86,,OMEPRAZOLE DR 20 MG CAPSULE,60505395203,0.03412,14.0,0.4777,10.82,26.92,0.598,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Omeprazole,Costco,16.16,12.86,,OMEPRAZOLE DR 20 MG CAPSULE,60505395203,0.03412,14.0,0.4777,33.83,26.92,0.2566,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Omeprazole,Target (CVS),20.23,12.86,,OMEPRAZOLE DR 20 MG CAPSULE,60505395203,0.03412,14.0,0.4777,42.35,26.92,0.5731,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Omeprazole,Harris Teeter,8.6,12.86,,OMEPRAZOLE DR 20 MG CAPSULE,60505395203,0.03412,14.0,0.4777,18.0,26.92,0.3313,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Omeprazole,Walmart Neighborhood Market,5.17,12.86,,OMEPRAZOLE DR 20 MG CAPSULE,60505395203,0.03412,14.0,0.4777,10.82,26.92,0.598,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Omeprazole,Publix,9.56,12.86,,OMEPRAZOLE DR 20 MG CAPSULE,60505395203,0.03412,14.0,0.4777,20.01,26.92,0.2566,ok_contains,yes,review_baseline_mapping
+national,Pantoprazole,CVS Pharmacy,28.37,15.61,,PANTOPRAZOLE SOD DR 40 MG TAB,62175061746,0.057,30.0,1.71,16.59,9.13,0.8174,ok_starts_with,yes,markup_drift>30%
+national,Pantoprazole,Walgreens,23.76,15.61,,PANTOPRAZOLE SOD DR 40 MG TAB,62175061746,0.057,30.0,1.71,13.89,9.13,0.5221,ok_starts_with,yes,markup_drift>30%
+national,Pantoprazole,Target (CVS),28.37,15.61,,PANTOPRAZOLE SOD DR 40 MG TAB,62175061746,0.057,30.0,1.71,16.59,9.13,0.8174,ok_starts_with,yes,markup_drift>30%
+national,Pantoprazole,Costco,23.99,15.61,,PANTOPRAZOLE SOD DR 40 MG TAB,62175061746,0.057,30.0,1.71,14.03,9.13,0.5368,ok_starts_with,yes,markup_drift>30%
+national,Pantoprazole,Sams Club,9.87,15.61,,PANTOPRAZOLE SOD DR 40 MG TAB,62175061746,0.057,30.0,1.71,5.77,9.13,0.3677,ok_starts_with,yes,markup_drift>30%
+national,Phenylephrine,Walmart,36.32,35.73,,PHENYLEPHRINE 10 MG TABLET,00536129136,0.04624,30.0,1.3872,26.18,25.76,0.0165,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Phenylephrine,CVS Pharmacy,30.77,35.73,,PHENYLEPHRINE 10 MG TABLET,00536129136,0.04624,30.0,1.3872,22.18,25.76,0.1388,ok_starts_with,yes,review_baseline_mapping
+national,Phenylephrine,Walgreens,18.86,35.73,,PHENYLEPHRINE 10 MG TABLET,00536129136,0.04624,30.0,1.3872,13.6,25.76,0.4722,ok_starts_with,yes,markup_drift>30%; review_baseline_mapping
+national,Phenylephrine,Walmart Neighborhood Market,36.32,35.73,,PHENYLEPHRINE 10 MG TABLET,00536129136,0.04624,30.0,1.3872,26.18,25.76,0.0165,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Phenylephrine,Costco,35.14,35.73,,PHENYLEPHRINE 10 MG TABLET,00536129136,0.04624,30.0,1.3872,25.33,25.76,0.0165,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Phenylephrine,Target (CVS),30.77,35.73,,PHENYLEPHRINE 10 MG TABLET,00536129136,0.04624,30.0,1.3872,22.18,25.76,0.1388,ok_starts_with,yes,review_baseline_mapping
+national,Phenylephrine,Harris Teeter,36.67,35.73,,PHENYLEPHRINE 10 MG TABLET,00536129136,0.04624,30.0,1.3872,26.43,25.76,0.0263,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Phenylephrine,Food Lion Pharmacy,36.67,35.73,,PHENYLEPHRINE 10 MG TABLET,00536129136,0.04624,30.0,1.3872,26.43,25.76,0.0263,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Phenylephrine,Publix,29.17,35.73,,PHENYLEPHRINE 10 MG TABLET,00536129136,0.04624,30.0,1.3872,21.03,25.76,0.1836,ok_starts_with,yes,review_baseline_mapping
+national,Phenylephrine,Kroger Pharmacy,36.67,35.73,,PHENYLEPHRINE 10 MG TABLET,00536129136,0.04624,30.0,1.3872,26.43,25.76,0.0263,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Plan B,Walgreens,12.27,18.71,,LEVONORGESTREL 1.5 MG TABLET,70700016406,9.00179,1.0,9.0018,1.36,2.08,0.3442,ok_contains,yes,markup_drift>30%
+national,Plan B,Food Lion Pharmacy,44.7,18.71,,LEVONORGESTREL 1.5 MG TABLET,70700016406,9.00179,1.0,9.0018,4.97,2.08,1.3891,ok_contains,yes,markup_drift>30%
+national,Plan B,"Community, a Walgreens Pharmacy",12.27,18.71,,LEVONORGESTREL 1.5 MG TABLET,70700016406,9.00179,1.0,9.0018,1.36,2.08,0.3442,ok_contains,yes,markup_drift>30%
+national,Polyethylene,Walgreens,3.62,20.95,,POLYETHYLENE GLYCOL 3350 POWD,00904693126,1.34868,1.0,1.3487,2.68,15.53,0.8272,ok_contains,yes,markup_drift>30%
+national,Polyethylene,Food Lion Pharmacy,30.71,20.95,,POLYETHYLENE GLYCOL 3350 POWD,00904693126,1.34868,1.0,1.3487,22.77,15.53,0.4662,ok_contains,yes,markup_drift>30%
+national,Polyethylene,Publix,9.61,20.95,,POLYETHYLENE GLYCOL 3350 POWD,00904693126,1.34868,1.0,1.3487,7.13,15.53,0.5412,ok_contains,yes,markup_drift>30%
+national,Polyethylene,"Community, a Walgreens Pharmacy",3.62,20.95,,POLYETHYLENE GLYCOL 3350 POWD,00904693126,1.34868,1.0,1.3487,2.68,15.53,0.8272,ok_contains,yes,markup_drift>30%
+national,Polyethylene,Kroger Pharmacy,28.36,20.95,,POLYETHYLENE GLYCOL 3350 POWD,00904693126,1.34868,1.0,1.3487,21.03,15.53,0.354,ok_contains,yes,markup_drift>30%
+national,Pseudoephedrine,Walgreens,4.53,11.96,,PSEUDOEPHEDRINE 30 MG TABLET,45802043262,0.05054,30.0,1.5162,2.99,7.89,0.6212,ok_starts_with,yes,markup_drift>30%
+national,Pseudoephedrine,Costco,5.96,11.96,,PSEUDOEPHEDRINE 30 MG TABLET,45802043262,0.05054,30.0,1.5162,3.93,7.89,0.5017,ok_starts_with,yes,markup_drift>30%
+national,Pseudoephedrine,Harris Teeter,19.47,11.96,,PSEUDOEPHEDRINE 30 MG TABLET,45802043262,0.05054,30.0,1.5162,12.84,7.89,0.6279,ok_starts_with,yes,markup_drift>30%
+national,Pseudoephedrine,Food Lion Pharmacy,16.06,11.96,,PSEUDOEPHEDRINE 30 MG TABLET,45802043262,0.05054,30.0,1.5162,10.59,7.89,0.3428,ok_starts_with,yes,markup_drift>30%
+national,Pseudoephedrine,Publix,3.95,11.96,,PSEUDOEPHEDRINE 30 MG TABLET,45802043262,0.05054,30.0,1.5162,2.61,7.89,0.6697,ok_starts_with,yes,markup_drift>30%
+national,Pseudoephedrine,"Community, a Walgreens Pharmacy",3.86,11.96,,PSEUDOEPHEDRINE 30 MG TABLET,45802043262,0.05054,30.0,1.5162,2.55,7.89,0.6773,ok_starts_with,yes,markup_drift>30%
+national,Pseudoephedrine,Kroger Pharmacy,19.47,11.96,,PSEUDOEPHEDRINE 30 MG TABLET,45802043262,0.05054,30.0,1.5162,12.84,7.89,0.6279,ok_starts_with,yes,markup_drift>30%
+national,Sertraline,CVS Pharmacy,19.87,12.32,,SERTRALINE HCL 50 MG TABLET,71093013005,0.04333,30.0,1.2999,15.29,9.48,0.6128,ok_contains,yes,markup_drift>30%
+national,Sertraline,Target (CVS),19.87,12.32,,SERTRALINE HCL 50 MG TABLET,71093013005,0.04333,30.0,1.2999,15.29,9.48,0.6128,ok_contains,yes,markup_drift>30%
+national,Sertraline,Costco,18.99,12.32,,SERTRALINE HCL 50 MG TABLET,71093013005,0.04333,30.0,1.2999,14.61,9.48,0.5414,ok_contains,yes,markup_drift>30%
+national,Sertraline,Sams Club,4.84,12.32,,SERTRALINE HCL 50 MG TABLET,71093013005,0.04333,30.0,1.2999,3.72,9.48,0.6071,ok_contains,yes,markup_drift>30%
+national,Sertraline,Publix,5.1,12.32,,SERTRALINE HCL 50 MG TABLET,71093013005,0.04333,30.0,1.2999,3.92,9.48,0.586,ok_contains,yes,markup_drift>30%
+national,Sildenafil,Walmart,4.6,14.5,,SILDENAFIL 50 MG TABLET,75834024030,0.18431,30.0,5.5293,0.83,2.62,0.6829,ok_contains,yes,markup_drift>30%; below_wholesale_floor
+national,Sildenafil,Walmart Neighborhood Market,4.6,14.5,,SILDENAFIL 50 MG TABLET,75834024030,0.18431,30.0,5.5293,0.83,2.62,0.6829,ok_contains,yes,markup_drift>30%; below_wholesale_floor
+national,Simethicone,Walgreens,2.0,10.69,,SIMETHICONE 80 MG TAB CHEW,51645086001,0.02704,30.0,0.8112,2.47,13.18,0.8129,ok_contains,yes,markup_drift>30%
+national,Simethicone,Costco,4.85,10.69,,SIMETHICONE 80 MG TAB CHEW,51645086001,0.02704,30.0,0.8112,5.98,13.18,0.5463,ok_contains,yes,markup_drift>30%
+national,Simethicone,Harris Teeter,18.98,10.69,,SIMETHICONE 80 MG TAB CHEW,51645086001,0.02704,30.0,0.8112,23.4,13.18,0.7755,ok_contains,yes,markup_drift>30%
+national,Simethicone,Food Lion Pharmacy,14.89,10.69,,SIMETHICONE 80 MG TAB CHEW,51645086001,0.02704,30.0,0.8112,18.36,13.18,0.3929,ok_contains,yes,markup_drift>30%
+national,Simethicone,Publix,7.48,10.69,,SIMETHICONE 80 MG TAB CHEW,51645086001,0.02704,30.0,0.8112,9.22,13.18,0.3003,ok_contains,yes,markup_drift>30%
+national,Simethicone,"Community, a Walgreens Pharmacy",2.0,10.69,,SIMETHICONE 80 MG TAB CHEW,51645086001,0.02704,30.0,0.8112,2.47,13.18,0.8129,ok_contains,yes,markup_drift>30%
+national,Simethicone,Kroger Pharmacy,18.98,10.69,,SIMETHICONE 80 MG TAB CHEW,51645086001,0.02704,30.0,0.8112,23.4,13.18,0.7755,ok_contains,yes,markup_drift>30%
+national,Terbinafine,Walmart,10.75,17.22,,TERBINAFINE 1% CREAM,51672208002,0.29566,1.0,0.2957,36.35,58.23,0.3757,ok_starts_with,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Terbinafine,Walgreens,16.05,17.22,,TERBINAFINE 1% CREAM,51672208002,0.29566,1.0,0.2957,54.28,58.23,0.0679,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Terbinafine,CVS Pharmacy,17.22,17.22,,TERBINAFINE 1% CREAM,51672208002,0.29566,1.0,0.2957,58.23,58.23,0.0,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Terbinafine,Walmart Neighborhood Market,10.75,17.22,,TERBINAFINE 1% CREAM,51672208002,0.29566,1.0,0.2957,36.35,58.23,0.3757,ok_starts_with,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Terbinafine,Costco,19.99,17.22,,TERBINAFINE 1% CREAM,51672208002,0.29566,1.0,0.2957,67.6,58.23,0.1609,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Terbinafine,Target (CVS),17.22,17.22,,TERBINAFINE 1% CREAM,51672208002,0.29566,1.0,0.2957,58.23,58.23,0.0,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Terbinafine,Harris Teeter,18.5,17.22,,TERBINAFINE 1% CREAM,51672208002,0.29566,1.0,0.2957,62.56,58.23,0.0743,ok_starts_with,yes,above_retail_ceiling; review_baseline_mapping
+national,Terbinafine,Publix,39.25,17.22,,TERBINAFINE 1% CREAM,51672208002,0.29566,1.0,0.2957,132.74,58.23,1.2793,ok_starts_with,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Tolnaftate,Walmart,46.0,45.0,,TOLNAFTATE 1% CREAM,51672202001,0.14318,1.0,0.1432,321.23,314.25,0.0222,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Tolnaftate,Walgreens,3.04,45.0,,TOLNAFTATE 1% CREAM,51672202001,0.14318,1.0,0.1432,21.23,314.25,0.9324,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Tolnaftate,Walmart Neighborhood Market,46.0,45.0,,TOLNAFTATE 1% CREAM,51672202001,0.14318,1.0,0.1432,321.23,314.25,0.0222,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Tolnaftate,Costco,20.35,45.0,,TOLNAFTATE 1% CREAM,51672202001,0.14318,1.0,0.1432,142.11,314.25,0.5478,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Tolnaftate,Harris Teeter,45.0,45.0,,TOLNAFTATE 1% CREAM,51672202001,0.14318,1.0,0.1432,314.25,314.25,0.0,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Tolnaftate,Food Lion Pharmacy,51.8,45.0,,TOLNAFTATE 1% CREAM,51672202001,0.14318,1.0,0.1432,361.73,314.25,0.1511,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Tolnaftate,Publix,26.0,45.0,,TOLNAFTATE 1% CREAM,51672202001,0.14318,1.0,0.1432,181.56,314.25,0.4222,ok_contains,yes,markup_drift>30%; above_retail_ceiling; review_baseline_mapping
+national,Tolnaftate,"Community, a Walgreens Pharmacy",3.04,45.0,,TOLNAFTATE 1% CREAM,51672202001,0.14318,1.0,0.1432,21.23,314.25,0.9324,ok_contains,yes,markup_drift>30%; review_baseline_mapping
+national,Tolnaftate,Kroger Pharmacy,45.0,45.0,,TOLNAFTATE 1% CREAM,51672202001,0.14318,1.0,0.1432,314.25,314.25,0.0,ok_contains,yes,above_retail_ceiling; review_baseline_mapping
+national,Vitamin,Walgreens,2.0,9.92,0.7984,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,Walmart,11.42,9.92,0.1512,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Vitamin,Walmart Neighborhood Market,11.42,9.92,0.1512,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Vitamin,Costco,4.92,9.92,0.504,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,Harris Teeter,9.92,9.92,0.0,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Vitamin,Food Lion Pharmacy,14.96,9.92,0.5081,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,Publix,4.07,9.92,0.5897,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,"Community, a Walgreens Pharmacy",2.0,9.92,0.7984,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,Kroger Pharmacy,9.92,9.92,0.0,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Vitamin,Walgreens,3.49,9.92,0.6482,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,Walmart,12.48,9.92,0.2581,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Vitamin,Walmart Neighborhood Market,12.48,9.92,0.2581,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Vitamin,Costco,6.48,9.92,0.3468,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,Harris Teeter,11.48,9.92,0.1573,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Vitamin,Food Lion Pharmacy,16.6,9.92,0.6734,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,Publix,5.05,9.92,0.4909,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,"Community, a Walgreens Pharmacy",3.49,9.92,0.6482,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,Kroger Pharmacy,11.48,9.92,0.1573,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Vitamin,CVS Pharmacy,22.7,9.92,1.2883,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,Walgreens,2.57,9.92,0.7409,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,Walmart,3.67,9.92,0.63,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,Costco,10.49,9.92,0.0575,,,0.0,30.0,,,,,not_found,yes,nadac_not_found
+national,Vitamin,Harris Teeter,18.37,9.92,0.8518,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,Target (CVS),22.7,9.92,1.2883,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,Walmart Neighborhood Market,3.67,9.92,0.63,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,Publix,4.03,9.92,0.5938,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found
+national,Vitamin,Kroger Pharmacy,18.37,9.92,0.8518,,,0.0,30.0,,,,,not_found,yes,peer_drift>30%; nadac_not_found

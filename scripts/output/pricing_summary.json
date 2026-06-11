@@ -1,0 +1,519 @@
+{
+  "generated_at": "2026-06-11T15:02:57.765842+00:00",
+  "threshold": 0.3,
+  "sources": [
+    "national"
+  ],
+  "drugs": [
+    {
+      "name": "Vitamin",
+      "source": "national",
+      "row_count": 27,
+      "flagged_count": 27,
+      "median_scraped_price": 9.92,
+      "nadac_wholesale_total": null,
+      "median_retail_markup": null,
+      "nadac_lookup_status": "not_found"
+    },
+    {
+      "name": "Aluminum",
+      "source": "national",
+      "row_count": 10,
+      "flagged_count": 10,
+      "median_scraped_price": 15.52,
+      "nadac_wholesale_total": 0.0105,
+      "median_retail_markup": 1477.62,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Calcium",
+      "source": "national",
+      "row_count": 10,
+      "flagged_count": 10,
+      "median_scraped_price": 13.08,
+      "nadac_wholesale_total": 0.4023,
+      "median_retail_markup": 32.51,
+      "nadac_lookup_status": "ok_starts_with"
+    },
+    {
+      "name": "Hydrocortisone",
+      "source": "national",
+      "row_count": 10,
+      "flagged_count": 10,
+      "median_scraped_price": 16.44,
+      "nadac_wholesale_total": 0.0962,
+      "median_retail_markup": 170.89,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Phenylephrine",
+      "source": "national",
+      "row_count": 10,
+      "flagged_count": 10,
+      "median_scraped_price": 35.73,
+      "nadac_wholesale_total": 1.3872,
+      "median_retail_markup": 25.76,
+      "nadac_lookup_status": "ok_starts_with"
+    },
+    {
+      "name": "Aspirin",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 9,
+      "median_scraped_price": 9.44,
+      "nadac_wholesale_total": 0.3159,
+      "median_retail_markup": 29.88,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Azithromycin",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 9,
+      "median_scraped_price": 12.74,
+      "nadac_wholesale_total": 14.5098,
+      "median_retail_markup": 0.88,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Benzocaine",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 9,
+      "median_scraped_price": 14.91,
+      "nadac_wholesale_total": null,
+      "median_retail_markup": null,
+      "nadac_lookup_status": "not_found"
+    },
+    {
+      "name": "Capsaicin",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 9,
+      "median_scraped_price": 17.8,
+      "nadac_wholesale_total": 0.0886,
+      "median_retail_markup": 200.9,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Chlorpheniramine",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 9,
+      "median_scraped_price": 10.25,
+      "nadac_wholesale_total": null,
+      "median_retail_markup": null,
+      "nadac_lookup_status": "not_found"
+    },
+    {
+      "name": "Dextromethorphan",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 9,
+      "median_scraped_price": 32.75,
+      "nadac_wholesale_total": 0.0627,
+      "median_retail_markup": 522.33,
+      "nadac_lookup_status": "ok_starts_with"
+    },
+    {
+      "name": "Fexofenadine",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 9,
+      "median_scraped_price": 9.52,
+      "nadac_wholesale_total": 8.5008,
+      "median_retail_markup": 1.12,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Fluticasone_Salmeterol",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 9,
+      "median_scraped_price": 97.08,
+      "nadac_wholesale_total": 0.2726,
+      "median_retail_markup": 356.13,
+      "nadac_lookup_status": "ok_starts_with"
+    },
+    {
+      "name": "Guaifenesin",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 9,
+      "median_scraped_price": 11.12,
+      "nadac_wholesale_total": 0.0117,
+      "median_retail_markup": 950.43,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Melatonin",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 9,
+      "median_scraped_price": 11.0,
+      "nadac_wholesale_total": null,
+      "median_retail_markup": null,
+      "nadac_lookup_status": "not_found"
+    },
+    {
+      "name": "Miconazole",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 9,
+      "median_scraped_price": 14.22,
+      "nadac_wholesale_total": 0.1283,
+      "median_retail_markup": 110.83,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Nicotine",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 9,
+      "median_scraped_price": 59.46,
+      "nadac_wholesale_total": 1.744,
+      "median_retail_markup": 34.09,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Tolnaftate",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 9,
+      "median_scraped_price": 45.0,
+      "nadac_wholesale_total": 0.1432,
+      "median_retail_markup": 314.25,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Azelastine",
+      "source": "national",
+      "row_count": 8,
+      "flagged_count": 8,
+      "median_scraped_price": 17.67,
+      "nadac_wholesale_total": 0.6232,
+      "median_retail_markup": 28.35,
+      "nadac_lookup_status": "ok_starts_with"
+    },
+    {
+      "name": "Clotrimazole",
+      "source": "national",
+      "row_count": 8,
+      "flagged_count": 8,
+      "median_scraped_price": 16.78,
+      "nadac_wholesale_total": 0.1808,
+      "median_retail_markup": 92.81,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Duloxetine",
+      "source": "national",
+      "row_count": 8,
+      "flagged_count": 8,
+      "median_scraped_price": 16.15,
+      "nadac_wholesale_total": 67.7589,
+      "median_retail_markup": 0.24,
+      "nadac_lookup_status": "ok_starts_with"
+    },
+    {
+      "name": "Minoxidil",
+      "source": "national",
+      "row_count": 8,
+      "flagged_count": 8,
+      "median_scraped_price": 16.94,
+      "nadac_wholesale_total": 0.2781,
+      "median_retail_markup": 60.91,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Omega-3-Acid",
+      "source": "national",
+      "row_count": 8,
+      "flagged_count": 8,
+      "median_scraped_price": 30.46,
+      "nadac_wholesale_total": null,
+      "median_retail_markup": null,
+      "nadac_lookup_status": "not_found"
+    },
+    {
+      "name": "Omeprazole",
+      "source": "national",
+      "row_count": 8,
+      "flagged_count": 8,
+      "median_scraped_price": 12.86,
+      "nadac_wholesale_total": 0.4777,
+      "median_retail_markup": 26.92,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Terbinafine",
+      "source": "national",
+      "row_count": 8,
+      "flagged_count": 8,
+      "median_scraped_price": 17.22,
+      "nadac_wholesale_total": 0.2957,
+      "median_retail_markup": 58.23,
+      "nadac_lookup_status": "ok_starts_with"
+    },
+    {
+      "name": "Bisacodyl",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 7,
+      "median_scraped_price": 10.22,
+      "nadac_wholesale_total": 1.251,
+      "median_retail_markup": 8.17,
+      "nadac_lookup_status": "ok_exact"
+    },
+    {
+      "name": "Cetirizine",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 7,
+      "median_scraped_price": 9.93,
+      "nadac_wholesale_total": 2.2785,
+      "median_retail_markup": 4.36,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Ibuprofen",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 7,
+      "median_scraped_price": 8.92,
+      "nadac_wholesale_total": 1.0146,
+      "median_retail_markup": 8.79,
+      "nadac_lookup_status": "ok_exact"
+    },
+    {
+      "name": "Loratadine",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 7,
+      "median_scraped_price": 7.38,
+      "nadac_wholesale_total": 1.7271,
+      "median_retail_markup": 4.27,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Pseudoephedrine",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 7,
+      "median_scraped_price": 11.96,
+      "nadac_wholesale_total": 1.5162,
+      "median_retail_markup": 7.89,
+      "nadac_lookup_status": "ok_starts_with"
+    },
+    {
+      "name": "Simethicone",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 7,
+      "median_scraped_price": 10.69,
+      "nadac_wholesale_total": 0.8112,
+      "median_retail_markup": 13.18,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Acetaminophen",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 6,
+      "median_scraped_price": 5.66,
+      "nadac_wholesale_total": 0.9072,
+      "median_retail_markup": 6.24,
+      "nadac_lookup_status": "ok_exact"
+    },
+    {
+      "name": "Diphenhydramine",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 6,
+      "median_scraped_price": 10.66,
+      "nadac_wholesale_total": 0.9972,
+      "median_retail_markup": 10.69,
+      "nadac_lookup_status": "ok_exact"
+    },
+    {
+      "name": "Losartan",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 6,
+      "median_scraped_price": 9.0,
+      "nadac_wholesale_total": 1.8162,
+      "median_retail_markup": 4.96,
+      "nadac_lookup_status": "ok_exact"
+    },
+    {
+      "name": "Amlodipine",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 5,
+      "median_scraped_price": 7.99,
+      "nadac_wholesale_total": 0.3315,
+      "median_retail_markup": 24.1,
+      "nadac_lookup_status": "ok_exact"
+    },
+    {
+      "name": "Bactrim",
+      "source": "national",
+      "row_count": 8,
+      "flagged_count": 5,
+      "median_scraped_price": 10.91,
+      "nadac_wholesale_total": 2.0097,
+      "median_retail_markup": 5.43,
+      "nadac_lookup_status": "ok_starts_with"
+    },
+    {
+      "name": "Miralax",
+      "source": "national",
+      "row_count": 8,
+      "flagged_count": 5,
+      "median_scraped_price": 20.95,
+      "nadac_wholesale_total": 1.3487,
+      "median_retail_markup": 15.53,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Pantoprazole",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 5,
+      "median_scraped_price": 15.61,
+      "nadac_wholesale_total": 1.71,
+      "median_retail_markup": 9.13,
+      "nadac_lookup_status": "ok_starts_with"
+    },
+    {
+      "name": "Polyethylene",
+      "source": "national",
+      "row_count": 8,
+      "flagged_count": 5,
+      "median_scraped_price": 20.95,
+      "nadac_wholesale_total": 1.3487,
+      "median_retail_markup": 15.53,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Sertraline",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 5,
+      "median_scraped_price": 12.32,
+      "nadac_wholesale_total": 1.2999,
+      "median_retail_markup": 9.48,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Lansoprazole",
+      "source": "national",
+      "row_count": 8,
+      "flagged_count": 4,
+      "median_scraped_price": 17.1,
+      "nadac_wholesale_total": 8.2788,
+      "median_retail_markup": 2.07,
+      "nadac_lookup_status": "ok_starts_with"
+    },
+    {
+      "name": "Loperamide",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 4,
+      "median_scraped_price": 11.5,
+      "nadac_wholesale_total": 8.7213,
+      "median_retail_markup": 1.32,
+      "nadac_lookup_status": "ok_starts_with"
+    },
+    {
+      "name": "Escitalopram",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 3,
+      "median_scraped_price": 12.5,
+      "nadac_wholesale_total": 1.4508,
+      "median_retail_markup": 8.62,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Esomeprazole",
+      "source": "national",
+      "row_count": 8,
+      "flagged_count": 3,
+      "median_scraped_price": 15.79,
+      "nadac_wholesale_total": 5.9538,
+      "median_retail_markup": 2.65,
+      "nadac_lookup_status": "ok_starts_with"
+    },
+    {
+      "name": "Famotidine",
+      "source": "national",
+      "row_count": 8,
+      "flagged_count": 3,
+      "median_scraped_price": 14.63,
+      "nadac_wholesale_total": 1.0137,
+      "median_retail_markup": 14.43,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Meclizine",
+      "source": "national",
+      "row_count": 7,
+      "flagged_count": 3,
+      "median_scraped_price": 12.99,
+      "nadac_wholesale_total": 3.45,
+      "median_retail_markup": 3.77,
+      "nadac_lookup_status": "ok_starts_with"
+    },
+    {
+      "name": "Plan B",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 3,
+      "median_scraped_price": 18.71,
+      "nadac_wholesale_total": 9.0018,
+      "median_retail_markup": 2.08,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Atorvastatin",
+      "source": "national",
+      "row_count": 8,
+      "flagged_count": 2,
+      "median_scraped_price": 13.28,
+      "nadac_wholesale_total": 1.6791,
+      "median_retail_markup": 7.91,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Naproxen",
+      "source": "national",
+      "row_count": 9,
+      "flagged_count": 2,
+      "median_scraped_price": 18.52,
+      "nadac_wholesale_total": 1.7844,
+      "median_retail_markup": 10.38,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Sildenafil",
+      "source": "national",
+      "row_count": 8,
+      "flagged_count": 2,
+      "median_scraped_price": 14.5,
+      "nadac_wholesale_total": 5.5293,
+      "median_retail_markup": 2.62,
+      "nadac_lookup_status": "ok_contains"
+    },
+    {
+      "name": "Benadryl",
+      "source": "national",
+      "row_count": 10,
+      "flagged_count": 0,
+      "median_scraped_price": 6.25,
+      "nadac_wholesale_total": 0.9972,
+      "median_retail_markup": 6.27,
+      "nadac_lookup_status": "ok_exact"
+    }
+  ]
+}
