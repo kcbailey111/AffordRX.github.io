@@ -772,27 +772,232 @@ function updateDosageGuidanceUI() {
     }
 }
 
-function populateMedicationDatalist() {
-    const datalist = document.getElementById('medicationList');
-    if (!datalist) return;
+/** All medications available for typeahead (rebuilt when CSV loads). */
+let medicationSuggestions = [];
 
+/** Index of keyboard-highlighted suggestion (-1 = none). */
+let medicationSuggestionActiveIndex = -1;
+
+function formatMedicationDisplayName(name) {
+    return (name || '').toString().trim().replace(/_/g, ' ');
+}
+
+function medicationNamesMatch(a, b) {
+    return medicationKey(a) === medicationKey(b);
+}
+
+function rebuildMedicationSuggestions() {
     const names = new Set();
-    medicationData.forEach(row => {
+    medicationData.forEach((row) => {
         const name = (row.Name || '').toString().trim();
         if (name) names.add(name);
     });
-    greenvilleMedicationData.forEach(row => {
+    greenvilleMedicationData.forEach((row) => {
         const name = (row.Name || '').toString().trim();
         if (name) names.add(name);
     });
 
-    const sorted = Array.from(names).sort((a, b) => a.localeCompare(b));
-    datalist.innerHTML = '';
-    sorted.forEach(name => {
-        const opt = document.createElement('option');
-        opt.value = name;
-        datalist.appendChild(opt);
+    const items = [];
+    const seenValues = new Set();
+    const nameByKey = new Map();
+
+    function addSuggestion(value, label, extraTerms) {
+        const canonical = value.trim();
+        if (!canonical || seenValues.has(medicationKey(canonical))) return;
+        if (!isMedicationOtc(canonical)) return;
+        seenValues.add(medicationKey(canonical));
+        nameByKey.set(medicationKey(canonical), canonical);
+        const terms = [
+            normalizeMedicationName(canonical),
+            normalizeMedicationName(label),
+            ...(extraTerms || []).map(normalizeMedicationName)
+        ].join(' ');
+        items.push({ value: canonical, label: label.trim(), terms });
+    }
+
+    Array.from(names)
+        .sort((a, b) => formatMedicationDisplayName(a).localeCompare(formatMedicationDisplayName(b)))
+        .forEach((name) => addSuggestion(name, formatMedicationDisplayName(name)));
+
+    Object.entries(DOSAGE_ALIASES).forEach(([alias, canonicalKey]) => {
+        const canonical = nameByKey.get(canonicalKey) || nameByKey.get(medicationKey(canonicalKey));
+        if (!canonical) return;
+        const aliasLabel = alias.replace(/\b\w/g, (c) => c.toUpperCase());
+        addSuggestion(canonical, aliasLabel, [formatMedicationDisplayName(canonical)]);
     });
+
+    medicationSuggestions = items;
+}
+
+/** @deprecated kept as alias for CSV load hooks */
+function populateMedicationDatalist() {
+    rebuildMedicationSuggestions();
+    const input = document.getElementById('medication');
+    if (input && document.activeElement === input) {
+        renderMedicationSuggestions(input.value);
+    }
+}
+
+function scoreMedicationMatch(item, query) {
+    const q = normalizeMedicationName(query);
+    if (!q) return 0;
+    const label = normalizeMedicationName(item.label);
+    const value = normalizeMedicationName(item.value);
+    if (label === q || value === q) return 100;
+    if (label.startsWith(q) || value.startsWith(q)) return 80;
+    if (item.terms.startsWith(q)) return 70;
+    if (label.includes(q) || value.includes(q) || item.terms.includes(q)) return 50;
+    return 0;
+}
+
+function filterMedicationSuggestions(query, limit = 8) {
+    const q = (query || '').trim();
+    if (!q) {
+        return medicationSuggestions.slice(0, limit);
+    }
+    return medicationSuggestions
+        .map((item) => ({ item, score: scoreMedicationMatch(item, q) }))
+        .filter((entry) => entry.score > 0)
+        .sort((a, b) => {
+            if (b.score !== a.score) return b.score - a.score;
+            return a.item.label.localeCompare(b.item.label);
+        })
+        .slice(0, limit)
+        .map((entry) => entry.item);
+}
+
+function setMedicationSuggestionsOpen(open) {
+    const input = document.getElementById('medication');
+    const list = document.getElementById('medicationSuggestions');
+    if (!input || !list) return;
+    input.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (!open) {
+        list.hidden = true;
+        medicationSuggestionActiveIndex = -1;
+    }
+}
+
+function selectMedicationSuggestion(item) {
+    const input = document.getElementById('medication');
+    if (!input || !item) return;
+    input.value = formatMedicationDisplayName(item.value);
+    setMedicationSuggestionsOpen(false);
+    updateDosageGuidanceUI();
+}
+
+function renderMedicationSuggestions(query) {
+    const input = document.getElementById('medication');
+    const list = document.getElementById('medicationSuggestions');
+    if (!input || !list) return;
+
+    const matches = filterMedicationSuggestions(query);
+    list.innerHTML = '';
+    medicationSuggestionActiveIndex = -1;
+
+    if (!matches.length) {
+        const empty = document.createElement('li');
+        empty.className = 'medication-suggestions__empty';
+        empty.setAttribute('role', 'option');
+        empty.textContent = query.trim()
+            ? 'No matching medications — check spelling or try another name'
+            : 'No medications loaded yet';
+        list.appendChild(empty);
+        list.hidden = false;
+        input.setAttribute('aria-expanded', 'true');
+        return;
+    }
+
+    matches.forEach((item, index) => {
+        const li = document.createElement('li');
+        li.className = 'medication-suggestions__item';
+        li.setAttribute('role', 'option');
+        li.id = `medication-suggestion-${index}`;
+        li.dataset.index = String(index);
+
+        const showAlias = normalizeMedicationName(item.label) !== normalizeMedicationName(item.value);
+        if (showAlias) {
+            li.innerHTML = `${escapeHtml(item.label)}<span class="medication-suggestions__alias">${escapeHtml(formatMedicationDisplayName(item.value))}</span>`;
+        } else {
+            li.textContent = item.label;
+        }
+
+        li.addEventListener('mousedown', (event) => {
+            event.preventDefault();
+            selectMedicationSuggestion(item);
+        });
+        list.appendChild(li);
+    });
+
+    list.hidden = false;
+    input.setAttribute('aria-expanded', 'true');
+}
+
+function highlightMedicationSuggestion(index) {
+    const list = document.getElementById('medicationSuggestions');
+    if (!list) return;
+    const items = list.querySelectorAll('.medication-suggestions__item');
+    if (!items.length) return;
+
+    medicationSuggestionActiveIndex = Math.max(0, Math.min(index, items.length - 1));
+    items.forEach((el, i) => {
+        el.classList.toggle('medication-suggestions__item--active', i === medicationSuggestionActiveIndex);
+        if (i === medicationSuggestionActiveIndex) {
+            el.scrollIntoView({ block: 'nearest' });
+        }
+    });
+}
+
+function setupMedicationAutocomplete() {
+    const input = document.getElementById('medication');
+    const list = document.getElementById('medicationSuggestions');
+    if (!input || !list) return;
+
+    input.addEventListener('input', () => {
+        renderMedicationSuggestions(input.value);
+        updateDosageGuidanceUI();
+    });
+
+    input.addEventListener('focus', () => {
+        renderMedicationSuggestions(input.value);
+    });
+
+    input.addEventListener('blur', () => {
+        window.setTimeout(() => setMedicationSuggestionsOpen(false), 150);
+    });
+
+    input.addEventListener('keydown', (event) => {
+        const items = list.querySelectorAll('.medication-suggestions__item');
+        if (!items.length || list.hidden) {
+            if (event.key === 'ArrowDown' && medicationSuggestions.length) {
+                renderMedicationSuggestions(input.value);
+                highlightMedicationSuggestion(0);
+                event.preventDefault();
+            }
+            return;
+        }
+
+        if (event.key === 'ArrowDown') {
+            event.preventDefault();
+            highlightMedicationSuggestion(medicationSuggestionActiveIndex + 1);
+        } else if (event.key === 'ArrowUp') {
+            event.preventDefault();
+            highlightMedicationSuggestion(
+                medicationSuggestionActiveIndex <= 0 ? items.length - 1 : medicationSuggestionActiveIndex - 1
+            );
+        } else if (event.key === 'Enter' && medicationSuggestionActiveIndex >= 0) {
+            const query = input.value.trim();
+            const matches = filterMedicationSuggestions(query);
+            const selected = matches[medicationSuggestionActiveIndex];
+            if (selected) {
+                event.preventDefault();
+                selectMedicationSuggestion(selected);
+            }
+        } else if (event.key === 'Escape') {
+            setMedicationSuggestionsOpen(false);
+        }
+    });
+
+    input.addEventListener('change', updateDosageGuidanceUI);
 }
 
 // Define Greenville ZIP codes for identification
@@ -893,8 +1098,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     }
     const medicationInput = document.getElementById('medication');
     if (medicationInput) {
-        medicationInput.addEventListener('input', updateDosageGuidanceUI);
-        medicationInput.addEventListener('change', updateDosageGuidanceUI);
+        setupMedicationAutocomplete();
     }
     updateDosageGuidanceUI();
 
@@ -1142,17 +1346,16 @@ function getBasePriceFromData(drugName, pharmacyName, zipCode) {
         return null;
     }
     
-    // Normalize the drug name for comparison (case-insensitive)
-    const normalizedDrug = drugName.trim().toLowerCase();
+    // Normalize the drug name for comparison (case-insensitive, ignores spaces/underscores)
+    const normalizedDrug = medicationKey(drugName);
     
     // Find matching entries in the CSV data
     const matches = dataSource.filter(row => {
-        const csvDrug = (row.Name || '').trim().toLowerCase();
+        const csvDrug = (row.Name || '').trim();
         const csvPharmacy = (row.Pharmacy || '').trim().toLowerCase();
         const targetPharmacy = pharmacyName.trim().toLowerCase();
         
-        // Match drug name and pharmacy name (check if pharmacy name contains the target)
-        return csvDrug === normalizedDrug && csvPharmacy.includes(targetPharmacy.split(' ')[0].toLowerCase());
+        return medicationNamesMatch(normalizedDrug, csvDrug) && csvPharmacy.includes(targetPharmacy.split(' ')[0].toLowerCase());
     });
     
     if (matches.length > 0) {
@@ -1433,9 +1636,8 @@ function displayResults(medication, dosage, quantity, center, radiusMiles, locat
         }
 
         // Check if the medication exists in either dataset
-        const normalizedMedication = medication.trim().toLowerCase();
-        const existsInMain = medicationData.some(row => ((row.Name || '').trim().toLowerCase()).includes(normalizedMedication));
-        const existsInGreenville = greenvilleMedicationData.some(row => ((row.Name || '').trim().toLowerCase()).includes(normalizedMedication));
+        const existsInMain = medicationData.some((row) => medicationNamesMatch(medication, row.Name));
+        const existsInGreenville = greenvilleMedicationData.some((row) => medicationNamesMatch(medication, row.Name));
         
         if (!existsInMain && !existsInGreenville) {
             resultsDiv.innerHTML = `

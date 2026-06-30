@@ -18,11 +18,11 @@
     <meta name="permissions-policy" content="geolocation=(self), microphone=(), camera=()">
     <title>AffordRX - Find Affordable OTC Prescriptions in South Carolina</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <link rel="stylesheet" href="style.css?v=20260505f">
+    <link rel="stylesheet" href="style.css?v=20260505g">
     <!-- Load Leaflet first, then PapaParse, then our script which depends on them -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-    <script src="script.js?v=20260505e" defer></script>
+    <script src="script.js?v=20260505f" defer></script>
 </head>
 <body>
     <div class="container">
@@ -70,10 +70,20 @@
                     <div class="form-group">
                         <label for="medication">Medication</label>
                         <div class="combo">
-                            <input type="text" id="medication" list="medicationList" placeholder="e.g. Ibuprofen, Miralax" required>
+                            <input
+                                type="text"
+                                id="medication"
+                                placeholder="e.g. Ibuprofen, Miralax"
+                                autocomplete="off"
+                                role="combobox"
+                                aria-autocomplete="list"
+                                aria-expanded="false"
+                                aria-controls="medicationSuggestions"
+                                required
+                            >
                             <span class="combo-arrow" aria-hidden="true">▾</span>
+                            <ul id="medicationSuggestions" class="medication-suggestions" role="listbox" hidden></ul>
                         </div>
-                        <datalist id="medicationList"></datalist>
                     </div>
                 </div>
 

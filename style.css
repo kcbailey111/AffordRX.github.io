@@ -180,7 +180,7 @@
         background: rgba(255, 255, 255, 0.9);
     }
 
-    /* Make the medication field feel like a dropdown while keeping typeahead via <datalist> */
+    /* Medication combobox with live-filtered suggestions */
     .combo {
         position: relative;
         display: flex;
@@ -200,6 +200,54 @@
         line-height: 1;
         pointer-events: none;
         user-select: none;
+    }
+
+    .medication-suggestions {
+        position: absolute;
+        top: calc(100% + 4px);
+        left: 0;
+        right: 0;
+        z-index: 200;
+        margin: 0;
+        padding: 6px 0;
+        max-height: 260px;
+        overflow-y: auto;
+        list-style: none;
+        background: #fff;
+        border: 2px solid #3498db;
+        border-radius: 10px;
+        box-shadow: 0 8px 24px rgba(41, 128, 185, 0.18);
+    }
+
+    .medication-suggestions[hidden] {
+        display: none;
+    }
+
+    .medication-suggestions__item {
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 15px;
+        color: #2c3e50;
+        line-height: 1.3;
+    }
+
+    .medication-suggestions__item:hover,
+    .medication-suggestions__item--active {
+        background: linear-gradient(135deg, #eef6ff 0%, #f4f9ff 100%);
+    }
+
+    .medication-suggestions__alias {
+        display: block;
+        margin-top: 2px;
+        font-size: 0.82rem;
+        color: #6b7c93;
+    }
+
+    .medication-suggestions__empty {
+        padding: 10px 15px;
+        color: #6b7c93;
+        font-size: 0.9rem;
+        cursor: default;
     }
 
     input:focus, select:focus {
